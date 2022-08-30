@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
   </head>
   <body>
+    @include('layouts._header')
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
@@ -19,6 +20,7 @@
 
     <div class="container">
       @yield('content')
+      @include('layouts._footer')
     </div>
 
   </body>
